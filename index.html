@@ -39,8 +39,9 @@ h1 em{font-style:normal;color:var(--haz)}
 .ray img{width:100%;height:100%;object-fit:cover;object-position:50% 12%;border-radius:50%;border:6px solid var(--night)}
 .ray b{position:absolute;bottom:4%;left:50%;transform:translateX(-50%);background:var(--night);border:2px solid var(--haz);color:var(--haz);
  padding:4px 14px;border-radius:6px;font-size:14px;white-space:nowrap}
-.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-.stats div{background:var(--olive);padding:22px 20px}.stats strong{display:block;font-size:34px;color:var(--haz);line-height:1.1}
+.statbar{background:var(--olive);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.stats{display:grid;grid-template-columns:repeat(3,1fr)}
+.stats div{padding:22px 0}.stats div+div{padding-left:24px;border-left:1px solid var(--line)}.stats strong{display:block;font-size:34px;color:var(--haz);line-height:1.1}
 .stats span{color:var(--muted);font-size:15px}
 section{padding:80px 0;scroll-margin-top:62px}section.alt{background:var(--olive)}
 h2{font-size:clamp(30px,4.5vw,46px);margin:0 0 .2em;line-height:1.1}
@@ -57,7 +58,7 @@ h2{font-size:clamp(30px,4.5vw,46px);margin:0 0 .2em;line-height:1.1}
 .card small a{color:var(--bone)}
 .card .btn{padding:11px 14px;font-size:15px}
 .card:target{outline:4px solid var(--haz);outline-offset:4px;box-shadow:0 0 40px rgba(242,194,0,.35)}
-.books{display:grid;gap:26px;grid-template-columns:repeat(auto-fill,minmax(200px,1fr))}
+.books{display:grid;gap:26px;grid-template-columns:repeat(auto-fill,minmax(180px,1fr))}
 .book{display:flex;flex-direction:column;gap:10px}
 .book img{width:100%;aspect-ratio:5/8;object-fit:cover;border-radius:4px;box-shadow:0 18px 40px rgba(0,0,0,.6);transition:transform .2s}
 .book a:hover img{transform:translateY(-6px) rotate(-1deg)}
@@ -70,14 +71,14 @@ h2{font-size:clamp(30px,4.5vw,46px);margin:0 0 .2em;line-height:1.1}
 footer{border-top:1px solid var(--line);padding:30px 0 40px;color:var(--muted);font-size:14px}
 footer .stencil{color:var(--haz);font-size:18px}
 @media(max-width:860px){.hero .wrap{grid-template-columns:1fr;padding-top:44px}.ray{order:-1;width:min(260px,70vw)}
- .stats{grid-template-columns:1fr}section{padding:56px 0}}</style></head><body>
+ .stats{grid-template-columns:1fr}.stats div+div{padding-left:0;border-left:0;border-top:1px solid var(--line)}section{padding:56px 0}}</style></head><body>
 <nav><div class="wrap"><a class="logo stencil" href="#top">READY <span>WITH</span> RAY</a><a class="l" href="#videos">Videos</a><a class="l" href="#guides">Free guides</a><a class="l" href="#books">Books</a><a class="l" href="#follow">Follow</a><a class="lang" href="es/">ES</a></div></nav>
 <div class="hazard"></div>
 <header class="hero" id="top"><div class="wrap"><div>
 <div class="kicker">PREPAREDNESS FIELD NOTES</div><h1 class="stencil">Be ready <em>before</em> you need to be.</h1><p class="lead">Short, practical survival videos and free one-page field guides. Water, power, food, shelter and the skills that keep working when the grid doesn't.</p>
 <div class="btns"><a class="btn haz" href="#guides">&#8595; Get the free guides</a><a class="btn ghost" href="#follow">Follow Ray</a></div></div>
 <div class="ray"><img src="img/ray.jpg" alt="Ray Mercer, AI host"><b class="stencil">RAY MERCER</b></div></div></header>
-<div class="stats"><div><strong class='stencil'>3–10</strong><span>days governments now ask every home to be ready for</span></div><div><strong class='stencil'>1 gal</strong><span>of water per person, per day</span></div><div><strong class='stencil'>20 ft</strong><span>minimum from the house for a running generator</span></div></div>
+<div class="statbar"><div class="wrap stats"><div><strong class='stencil'>3–10</strong><span>days governments now ask every home to be ready for</span></div><div><strong class='stencil'>1 gal</strong><span>of water per person, per day</span></div><div><strong class='stencil'>20 ft</strong><span>minimum from the house for a running generator</span></div></div></div>
 <section id="videos"><div class="wrap"><h2 class="stencil">Latest videos</h2><p class="sub">A new video every day at 6:30 PM. Watch here or follow on your favorite app.</p><div class="vids"><div class="vid"><video controls playsinline preload="none" poster="img/thumb-001-en.jpg" src="videos/001-en.mp4"></video>
 <p>The fallout shelter you already have</p></div><div class="vid"><video controls playsinline preload="none" poster="img/thumb-002-en.jpg" src="videos/002-en.mp4"></video>
 <p>Why your drains back up in a hurricane</p></div><div class="note">The first videos are rolling out now. Follow Ray so you don't miss them.</div></div></div></section>
