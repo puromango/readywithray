@@ -1,0 +1,89 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free Emergency Radio Field Guide | Ready with Ray</title>
+<meta name="description" content="Free printable guide: NOAA weather, emergency nets and local channels for all 48 contiguous states. By Joan Cabrera, AB4AD. No sign-up.">
+<meta property="og:title" content="Free Emergency Radio Field Guide"><meta property="og:description" content="Where to listen when the power and the cell towers are down. Free, no sign-up.">
+<meta property="og:image" content="https://readywithray.com/radio/field-guide-cover.jpg"><meta property="og:url" content="https://readywithray.com/radio/">
+<meta name="theme-color" content="#0d120f"><link rel="icon" href="../img/ray.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--night:#0d120f;--olive:#1a231c;--olive2:#222e25;--bone:#efe8d8;--muted:#b9b29f;--haz:#f2c200;--rust:#c8642c;--line:#33402f}
+*{box-sizing:border-box}body{margin:0;background:var(--night);color:var(--bone);font:17px/1.6 Inter,system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+a{color:inherit}img{max-width:100%;display:block}.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+.stencil{font-family:"Black Ops One",Impact,sans-serif;font-weight:400;letter-spacing:.02em}
+nav{background:rgba(13,18,15,.95);border-bottom:1px solid var(--line)}nav .wrap{display:flex;align-items:center;height:62px}
+nav .logo{font-size:20px;text-decoration:none;color:var(--haz);margin-right:auto}nav .logo span{color:var(--bone)}
+nav a.l{text-decoration:none;font-weight:600;font-size:15px;color:var(--muted)}
+.hazard{height:10px;background:repeating-linear-gradient(-45deg,var(--haz) 0 18px,#111 18px 36px)}
+.hero{background:repeating-radial-gradient(circle at 80% 30%,transparent 0 26px,rgba(242,194,0,.07) 26px 27px),linear-gradient(160deg,#1d281f,#0d120f 70%)}
+.hero .wrap{display:grid;grid-template-columns:1.2fr .8fr;gap:44px;align-items:center;padding-top:60px;padding-bottom:64px}
+.kicker{color:var(--haz);font-weight:800;font-size:13px;letter-spacing:.18em}
+h1{font-size:clamp(38px,6vw,68px);line-height:1.03;margin:.15em 0 .3em}h1 em{font-style:normal;color:var(--haz)}
+.lead{font-size:clamp(17px,2.2vw,20px);color:var(--muted);max-width:36em;margin:0}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:15px 24px;border-radius:8px;font-weight:800;text-decoration:none;font-size:17px}
+.btn.haz{background:var(--haz);color:#111}.btn.ghost{border:2px solid var(--bone)}
+.fine{color:var(--muted);font-size:14px;margin-top:12px}
+.cover{justify-self:center;width:min(340px,80vw);transform:rotate(2deg);box-shadow:0 18px 40px rgba(0,0,0,.55);border:4px solid var(--haz)}
+section{padding:64px 0}section.alt{background:var(--olive)}
+h2{font-size:clamp(28px,4vw,40px);margin:0 0 .3em;line-height:1.1}
+.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fill,minmax(230px,1fr))}
+.item{background:var(--olive2);border:1px solid var(--line);border-top:4px solid var(--haz);border-radius:10px;padding:18px 20px}
+.item b{display:block;font-family:"Black Ops One",Impact,sans-serif;font-weight:400;font-size:30px;color:var(--haz);line-height:1.1}
+.item p{margin:6px 0 0;color:var(--muted);font-size:15px}
+.warn{border:2px solid var(--rust);border-radius:10px;padding:18px 22px;background:rgba(200,100,44,.08);max-width:52em}
+.warn strong{color:var(--rust)}
+.books{display:grid;gap:16px;grid-template-columns:repeat(auto-fill,minmax(250px,1fr))}
+.book{background:var(--night);border:1px solid var(--line);border-radius:10px;padding:18px 20px}
+.book .n{color:var(--haz);font-weight:800;font-size:13px;letter-spacing:.14em}.book h3{margin:4px 0 6px;font-size:19px}.book p{margin:0;color:var(--muted);font-size:15px}
+.es{border-left:4px solid var(--haz);padding:6px 0 6px 16px;color:var(--muted);max-width:50em}
+.thanks{display:none;background:var(--olive2);border:2px solid var(--haz);border-radius:12px;padding:26px 28px;margin-top:30px;max-width:60em}
+.thanks.show{display:block}.thanks h2{font-size:clamp(24px,3.4vw,32px)}.thanks p{margin:.3em 0 1em;color:var(--bone)}
+.rv{display:flex;flex-wrap:wrap;gap:10px}.rv a{background:var(--haz);color:#111;font-weight:800;text-decoration:none;padding:11px 16px;border-radius:8px;font-size:15px}
+.rv a.es{background:transparent;color:var(--haz);border:2px solid var(--haz)}.rv a.hide{display:none}
+.book a.r{display:inline-block;margin-top:12px;color:var(--haz);font-weight:800;font-size:14px}
+footer{padding:36px 0;color:var(--muted);font-size:14px;border-top:1px solid var(--line)}
+@media(max-width:760px){.hero .wrap{grid-template-columns:1fr;padding-top:40px}.cover{width:min(260px,70vw)}nav a.l{display:none}}
+</style></head><body>
+<nav><div class="wrap"><a class="logo stencil" href="../">READY <span>WITH</span> RAY</a><a class="l" href="../#guides">More free guides</a></div></nav>
+<div class="hazard"></div>
+<header class="hero"><div class="wrap"><div>
+<div class="kicker">FREE GIFT FOR READERS · 2026 EDITION</div>
+<h1 class="stencil">Emergency Radio <em>Field Guide</em></h1>
+<p class="lead">Where to listen when the power and the cell towers are down. NOAA weather, amateur emergency nets, SKYWARN repeaters and agency channels for all 48 contiguous states, with a source for every number.</p>
+<div class="btns"><a class="btn haz" href="Ready-with-Ray-Emergency-Radio-Field-Guide-2026.pdf" download onclick="thank()">&#8595; Download the free PDF</a><a class="btn ghost" href="Ready-with-Ray-Emergency-Radio-Field-Guide-2026.pdf" target="_blank" rel="noopener" onclick="thank()">Open it</a></div>
+<p class="fine">15 pages · Letter size · prints fine in black and white · no sign-up, no email</p>
+<div class="thanks" id="thanks"><h2 class="stencil">Thank you. We hope it helps.</h2>
+<p>If our book has been useful to you, we would be truly grateful for an honest review on Amazon. It takes a minute and helps other families find it. Just tap your book below. The guide is yours either way.</p>
+<div class="rv"><a class="" data-b="unplugged" href="https://www.amazon.com/review/create-review?asin=B0DJPLB79V" target="_blank" rel="noopener">&#9733; Review Ham Radio Unplugged</a><a class="" data-b="beginners" href="https://www.amazon.com/review/create-review?asin=B0FC268151" target="_blank" rel="noopener">&#9733; Review Ham Radio for Beginners</a><a class="" data-b="ace" href="https://www.amazon.com/review/create-review?asin=B0FC4DJS1T" target="_blank" rel="noopener">&#9733; Review Ace Your Technician Class Exam</a><a class="" data-b="offgrid" href="https://www.amazon.com/review/create-review?asin=B0DK7LZ8GM" target="_blank" rel="noopener">&#9733; Review Survival Prep: HAM Radio Off-Grid</a>
+<a class="es" data-b="desenchufados" href="https://www.amazon.com/review/create-review?asin=B0DJPN785F" target="_blank" rel="noopener">&#9733; Reseña: Radioaficionados Desenchufados</a><a class="es" data-b="radioaficion" href="https://www.amazon.com/review/create-review?asin=B0FC2XHJQT" target="_blank" rel="noopener">&#9733; Reseña: Radioafición para Principiantes</a><a class="es" data-b="conectado" href="https://www.amazon.com/review/create-review?asin=B0FCLK3XZJ" target="_blank" rel="noopener">&#9733; Reseña: Sobrevivir 30 Días, Cómo mantenerte conectado</a></div>
+<p style="margin-top:14px;color:var(--muted);font-size:14px">¿Leíste la edición en español? Una reseña honesta en Amazon nos ayuda muchísimo. ¡Gracias!</p></div>
+
+</div><img class="cover" src="field-guide-cover.jpg" alt="Cover of the Emergency Radio Field Guide" width="340" height="440"></div></header>
+<section class="alt"><div class="wrap"><h2 class="stencil">What's inside</h2>
+<div class="grid">
+<div class="item"><b>7</b><p>NOAA Weather Radio frequencies that work anywhere in the U.S.</p></div>
+<div class="item"><b>48</b><p>State cards: your weather station, local emergency repeaters and statewide HF nets</p></div>
+<div class="item"><b>14</b><p>National mutual-aid channels, plus hospital and EMS examples (listen only)</p></div>
+<div class="item"><b>1</b><p>Fill-in plan page: your channels, check-in times and a go-bag radio checklist</p></div>
+</div></div></section>
+<section><div class="wrap">
+<div class="warn"><strong>Listen first.</strong> Listening needs no license. Talking on ham channels needs a ham license, and agency and hospital channels are receive-only. Repeaters and nets change, so listen to each channel from your own home before you count on it. In an emergency, call 911 when it works.</div>
+<p class="es" style="margin-top:28px"><b>¿Lectores en español?</b> La guía está en inglés, pero las frecuencias son las mismas para todos. Descárgala con el botón amarillo de arriba.</p>
+</div></section>
+<section class="alt"><div class="wrap"><h2 class="stencil">The ham radio series</h2>
+<p style="color:var(--muted);margin:0 0 26px">By Joan Cabrera, AB4AD. On Amazon in Kindle and paperback.</p>
+<div class="books">
+<div class="book"><div class="n">STEP 1</div><h3>Ham Radio Unplugged</h3><p>Get on the air this week, the easy way. Radios you can use today, GMRS, and programming your radio from your phone.</p><a class="r" href="https://www.amazon.com/review/create-review?asin=B0DJPLB79V" target="_blank" rel="noopener">&#9733; Already read it? Leave a review</a></div>
+<div class="book"><div class="n">STEP 2</div><h3>Ham Radio for Beginners</h3><p>How it all works: bands, antennas, repeaters, emergency nets and your first station.</p><a class="r" href="https://www.amazon.com/review/create-review?asin=B0FC268151" target="_blank" rel="noopener">&#9733; Already read it? Leave a review</a></div>
+<div class="book"><div class="n">STEP 3</div><h3>Ace Your Amateur Radio Technician Class Exam</h3><p>Get licensed on the 2026–2030 question pool.</p><a class="r" href="https://www.amazon.com/review/create-review?asin=B0FC4DJS1T" target="_blank" rel="noopener">&#9733; Already read it? Leave a review</a></div>
+</div></div></section>
+<footer><div class="wrap"><p>Updated every year. Last checked November 2026. Independent civilian reference, not endorsed by any agency. Free to print and share unchanged.</p><p>&copy; Ready with Ray · readywithray.com</p></div></footer>
+<script>
+function thank(){var t=document.getElementById('thanks');t.classList.add('show');
+ var b=new URLSearchParams(location.search).get('b');
+ if(b&&document.querySelector('.rv a[data-b="'+b+'"]'))document.querySelectorAll('.rv a').forEach(function(a){if(a.dataset.b!==b)a.classList.add('hide')});
+ setTimeout(function(){t.scrollIntoView({behavior:'smooth',block:'center'})},400)}
+</script>
+</body></html>
